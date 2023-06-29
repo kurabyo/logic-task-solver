@@ -33,12 +33,9 @@ const numbersOfElementOnRight = (arr) => {
         if (arr[i][0] === 8 || arr[i][1] === 8 || arr[i][2] === 8 || arr[i][3] === 8) {
             if (arr[i][0] === 7 || arr[i][1] === 7 || arr[i][2] === 7 || arr[i][3] === 7) num++
         }
-        if (arr[i][4] === 8 || arr[i][5] === 8 || arr[i][6] === 8 || arr[i][7] === 8) {
-            if (arr[i][4] === 7 || arr[i][5] === 7 || arr[i][6] === 7 || arr[i][7] === 7) num++
-        }
     }
 
-    return num
+    return num * 2
 }
 
 console.log(numberOfCases + ` - загальна кількість всіх можливих унікальних випадків`)
